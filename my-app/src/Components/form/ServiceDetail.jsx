@@ -92,9 +92,9 @@ export default function ServiceDetail() {
                         <DropBox mess={"SLA"} />
                         <DropBox mess={"Snapshot"} Comp={Time}/>
                     </div>
-                    <div style={{borderRadius: "5px",overflow: "hidden", border: "1px solid #DBE0EB"}}>
+                
+                    <div style={{borderRadius: "5px",overflow: "hidden", border: "1px solid #DBE0EB",width: "100%"}}>
                         <TableHeader/>
-                        <TableRow/>
                         <TableRow/>
                         <TableRow/>
                         <TableRow noBorder={true}/>

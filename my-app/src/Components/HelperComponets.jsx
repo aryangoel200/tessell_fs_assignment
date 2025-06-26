@@ -109,15 +109,18 @@ export function FigmaCheckbox() {
 
 export function TableHeader(){
     return <>
-    <div style={{display: "flex"}}>
-        <div className="td">
-            <CustomCheckbox2/>
-        </div>
-        <Headercell/>
-        <Headercell/>
-        <Headercell val={true}/>
-    
-    </div>
+    <div style={{ display: "flex", alignItems: "flex-start", width: "100%" }}>
+  <div className="td">
+    <CustomCheckbox2 />
+  </div>
+
+  {/* FLEX CONTAINER FOR THE CELLS */}
+  <div style={{ display: "flex", flex: 1 }}>
+    <Headercell />
+    <Headercell />
+    <Headercell val={true} />
+  </div>
+</div>
     </>
 }
 
@@ -137,31 +140,35 @@ export function TableRow({noBorder}){
 }
 
 
-function Headercell({ val,noBd }) {
+function Headercell({ val, noBd }) {
   return (
     <div
       className="ta"
       style={{
-        display: "flex",
-        
         ...(val && { justifyContent: "flex-end" }) 
       }}
     >
-    {val?(<> 
-      <div className="tf">
-        <div className="tg">
-          <Asc />
-          <Desc />
-        </div>
-      </div>
-      <span className="tb">Header</span></>):(<> <span className="tb">Header</span>
-      <div className="tf">
-        <div className="tg">
-          <Asc />
-          <Desc />
-        </div>
-      </div></>)}
-     
+      {val ? (
+        <>
+          <div className="tf">
+            <div className="tg">
+              <Asc />
+              <Desc />
+            </div>
+          </div>
+          <span className="tb">Header</span>
+        </>
+      ) : (
+        <>
+          <span className="tb">Header</span>
+          <div className="tf">
+            <div className="tg">
+              <Asc />
+              <Desc />
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
