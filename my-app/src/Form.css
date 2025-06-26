@@ -1,0 +1,373 @@
+.yo {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+    align-self: stretch;
+    overflow: hidden;
+    overflow-y: scroll;
+     height: 100vh;           /* or 100% if it's inside a full-height parent */
+    overflow-y: auto;        /* this enables scrolling */
+    
+}
+
+.yo::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+}
+.fb::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+}
+
+.ua, .fb {
+  flex-shrink: 0;
+}
+
+.fa {
+    display: flex;
+    padding: 0px 20px;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    margin-top: 24px;
+    overflow-y: auto;
+
+}
+
+.fb {
+    display: flex;
+    padding: var(--Spacing-medium, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-large, 32px);
+    align-self: stretch;
+    border-radius: var(--Spacing-regular, 8px);
+    background: var(--Color-Surface-surface-0, #FFF);
+    overflow-y: auto;
+
+}
+
+.fc {
+    display: flex;
+    padding: var(--Spacing-medium, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-large, 32px);
+    align-self: stretch;
+    border: 1px solid green;
+}
+
+.fd {
+    display: flex;
+    padding: 8px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    background: var(--Color-Surface-surface-0, #FFF);
+
+ 
+
+}
+
+.fe {
+    display: flex;
+    padding: 16px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    /* border: 1px solid green */
+}
+
+.fg {
+    height: 447px;
+    align-self: stretch;
+    background: var(--Color-Surface-surface-0, #FFF);
+
+}
+
+
+.button {
+    display: flex;
+    padding: 8px 16px 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 4px;
+    background: var(--Color-Primary-primary-200, #0942B3);
+    box-shadow: 0px 1px 0px 0px rgba(24, 24, 27, 0.10);
+}
+
+.ff {
+    color: var(--Color-Surface-surface-0, #FFF);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 150% */
+}
+
+.fm {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.fh {
+    color: var(--color-text-text-200-primary, #1A2031);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* heading/Titles */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 24px;
+    /* 120% */
+    letter-spacing: -0.2px;
+}
+
+
+.fk {
+    color: var(--color-text-text-100-subtler, #525F7A);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* heading/primary */
+    font-family: var(--Font-Family-Family, Inter);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: var(--Font-Weight-Weight-Medium, 550);
+    line-height: 22px;
+    /* 146.667% */
+    letter-spacing: var(--Font-Spacing-font-letter-spacing-dense, -0.1px);
+}
+
+.fl {
+    color: var(--Color-Primary-primary-200, #0942B3);
+
+    /* Text-body/secondary/secondary */
+    font-family: var(--Font-Family-Family, Inter);
+    font-size: var(--Font-Size-size-small, 11px);
+    font-style: normal;
+    font-weight: var(--Font-Weight-Weight-Regular, 450);
+    line-height: var(--Font-Line_Height-font-lh-small, 16px);
+    /* 145.455% */
+    letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
+}
+
+
+
+.fr {
+    display: flex;
+    width: 296px;
+    padding: 8px 20px;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+
+
+.fn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+
+
+.fo {
+    color: var(--Color-Primary-primary-200, #0942B3);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 20px;
+    /* 153.846% */
+}
+
+
+.fp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.fq {
+    color: var(--color-text-text-100-subtler, #525F7A);
+
+    font-family: var(--Font-Family-Family, Inter);
+    font-size: var(--Font-Size-size-small, 11px);
+    font-style: normal;
+    font-weight: var(--Font-Weight-Weight-Regular, 450);
+    line-height: var(--Font-Line_Height-font-lh-small, 16px);
+    /* 145.455% */
+    letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
+}
+
+
+.fs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-smallest, 2px);
+    align-self: stretch;
+}
+
+.ft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-semi-large, 24px);
+}
+
+.fu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-semi-large, 24px);
+}
+
+.a1 {
+    height: 10px;
+}
+
+.fv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-smallest, 2px);
+    align-self: stretch;
+}
+
+.fw {
+    color: var(--color-text-text-200-primary, #1A2031);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* heading/primary */
+    font-family: var(--Font-Family-Family, Inter);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: var(--Font-Weight-Weight-Medium, 550);
+    line-height: 22px;
+    /* 146.667% */
+    letter-spacing: var(--Font-Spacing-font-letter-spacing-dense, -0.1px);
+}
+
+.fx {
+    color: var(--color-text-text-100-subtler, #525F7A);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Text-body/primary/primary */
+    font-family: var(--Font-Family-Family, Inter);
+    font-size: var(--Font-Size-size-regular, 13px);
+    font-style: normal;
+    font-weight: var(--Font-Weight-Weight-Regular, 450);
+    line-height: var(--Font-Line_Height-font-lh-regular, 20px);
+    /* 153.846% */
+    letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
+}
+
+
+
+.ha {
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-regular, 8px);
+    align-self: stretch;
+}
+
+.hb {
+    color: var(--Text-color-text-normal, #1A2031);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* heading/form titles */
+    font-family: var(--Font-Family-Family, Inter);
+    font-size: var(--Font-Size-size-form-titles, 12px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Font-Line_Height-font-lh-small, 16px);
+    /* 133.333% */
+    letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
+}
+
+.hc {
+    display: flex;
+    padding: var(--Spacing-regular, 8px) var(--Spacing-semi-medium, 12px);
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.hd {
+    display: flex;
+    align-items: center;
+    gap: var(--Spacing-small, 4px);
+}
+
+
+.he {
+    display: flex;
+    padding: var(--Spacing-regular, 8px) var(--Spacing-semi-medium, 12px);
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid var(--Border-color-border-subtler, #C4CDDF);
+    background: var(--Surface-color-surface-primary, #FFF);
+}
+
+/* .hf{
+
+} */
+
+.hh {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 100%;
+}
+
+/* Hover styles on the entire `.he` */
+
+
+.he:focus-within {
+    border: 1px solid #0942B3;
+}
+
+.hg {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.hi {
+    border: white;
+    outline: none;
+    width: 100%;
+    color: var(--Text-color-text-normal, #1A2031);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Text-body/primary/primary */
+    font-family: var(--Font-Family-Family, Inter);
+    font-size: var(--Font-Size-size-regular, 13px);
+    font-style: normal;
+    font-weight: var(--Font-Weight-Weight-Regular, 450);
+    line-height: var(--Font-Line_Height-font-lh-regular, 20px);
+    /* 153.846% */
+    letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
+}
