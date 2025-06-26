@@ -122,21 +122,22 @@ export function TableHeader(){
 }
 
 
-export function TableRow(){
+export function TableRow({noBorder}){
     return <>
     <div style={{display: "flex"}}>
-        <div className="td" style={{background: "white"}}>
+        <div className={`td ${noBorder ? 'no-border' : ''}`}
+        style={{background: "white"}}>
             <CustomCheckbox2/>
         </div>
-        <TableCell mess={"Link"} code={1}/>
-        <TableCell mess={"Row Title"} code={2}/>
-        <TableCell mess={"Delete"} val={true} Comp={Trash} code={3}/>
+        <TableCell mess={"Link"} code={1} noBd={noBorder}/>
+        <TableCell mess={"Row Title"} code={2} noBd={noBorder}/>
+        <TableCell mess={"Delete"} val={true} Comp={Trash} code={3} noBd={noBorder}/>
     </div>
     </>
 }
 
 
-function Headercell({ val }) {
+function Headercell({ val,noBd }) {
   return (
     <div
       className="ta"
@@ -165,10 +166,10 @@ function Headercell({ val }) {
   );
 }
 
-function TableCell({val,mess,Comp,code}){
+function TableCell({val,mess,Comp,code,noBd}){
     return (
     <div
-      className="ta"
+      className={`ta ${noBd ? 'no-border' : ''}`}
       style={{
         display: "flex",
         background: "white",

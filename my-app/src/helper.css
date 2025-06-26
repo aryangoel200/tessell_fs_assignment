@@ -370,7 +370,12 @@
     align-items: center;
 }
 
-
+.ta.no-border {
+  border-bottom: none;
+}
+.td.no-border {
+  border-bottom: none;
+}
 
 .tb {
     color: var(--Text-color-text-brand, #0942B3);

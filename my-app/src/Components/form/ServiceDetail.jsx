@@ -21,8 +21,6 @@ export default function ServiceDetail() {
     const [selected, setSelected] = useState("none");
     return (
         <div className="yo">
-
-           
             <div className="fb">
               
                 <div className="fs">
@@ -94,12 +92,16 @@ export default function ServiceDetail() {
                         <DropBox mess={"SLA"} />
                         <DropBox mess={"Snapshot"} Comp={Time}/>
                     </div>
-                    <div>
+                    <div style={{borderRadius: "5px",overflow: "hidden", border: "1px solid #DBE0EB"}}>
                         <TableHeader/>
                         <TableRow/>
                         <TableRow/>
                         <TableRow/>
+                        <TableRow noBorder={true}/>
                     </div>
+
+
+
 
                     <div className="za">
                         <div className="zc" style={{display:"flex",gap: "8px"}} >
