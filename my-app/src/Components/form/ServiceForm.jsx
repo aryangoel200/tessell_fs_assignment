@@ -7,7 +7,7 @@ import ServiceDetail from "./ServiceDetail";
 export default function ServiceForm() {
     return (
         <div className="fa">
-            <div className="fd" style={{width: "380px", flexShrink:"0"}}>
+            <div className="fd" style={{minWidth:"380px" , flexShrink:"0"}}>
                 <div className="fg">
                     <Info />
                 </div>

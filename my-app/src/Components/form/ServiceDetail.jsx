@@ -71,7 +71,7 @@ export default function ServiceDetail() {
                             />
                             </div>
                     </div>
-                    <div style={{ display: "flex", gap: "16px" }}>
+                    <div style={{ display: "flex", gap: "16px", flexWrap: "wrap"}}>
                         <DropBox mess={"Start day"} Comp={Calendar} />
                         <DropBox mess={"Start time"} Comp={Time} />
                     </div>
@@ -88,7 +88,7 @@ export default function ServiceDetail() {
                         </span>
                     </div>
 
-                    <div style={{display:"flex", gap:"16px"}}>
+                    <div style={{display:"flex", gap:"16px", flexWrap:"wrap"}}>
                         <DropBox mess={"SLA"} />
                         <DropBox mess={"Snapshot"} Comp={Time}/>
                     </div>

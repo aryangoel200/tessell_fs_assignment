@@ -144,6 +144,8 @@
     display: flex;
     align-items: flex-end;
     gap: var(--Spacing-medium, 16px);
+    flex-wrap: wrap;
+
 }
 
 .ua {

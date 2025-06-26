@@ -20,8 +20,9 @@
   border-right: 1px solid var(--Color-Surface-surface-100, #EEF1F6);
   background: var(--Color-Surface-surface-0, #FFF);
   box-sizing: border-box;
-
 }
+
+
 
 .main {
   flex-grow: 1;
@@ -37,7 +38,6 @@
   overflow-y: auto;
   box-sizing: border-box;
   width: 100%;
-  max-width: 1220px;
   /* overflow: hidden; */
 
 }
@@ -288,7 +288,7 @@
 .am {
   display: flex;
   width: 100%;
-  max-width: 1220px;
+  /* max-width: 1220px; */
   min-height: 48px;
   padding: 12px 20px;
   justify-content: space-between;
@@ -421,4 +421,14 @@ letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
 
 .sidebar-wrapper{
     position: relative;
+}
+
+:root {
+  --design-width: 1440;
+}
+.scaled-wrapper {
+  width: 1440px; /* Design width */
+  transform: scale(calc(100vw / 1440));
+  transform-origin: top left;
+  margin: 0 auto;
 }
