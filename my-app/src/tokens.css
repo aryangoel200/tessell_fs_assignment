@@ -1,0 +1,61 @@
+:root {
+  /* ------------------- Color Tokens ------------------- */
+
+  /* Surface Colors */
+  --Color-Surface-surface-0: #FFF;
+  --Color-Surface-surface-100: #F2F4F8;
+  --Color-Surface-surface-200: #DBE0EB;
+  --Surface-color-surface-primary: #FFF;
+  --Surface-color-surface-secondary: #EEF1F6;
+  --Surface-color-surface-brand-subtle: #EBF2FF;
+
+  /* Primary Brand */
+  --Color-Primary-primary-200: #0942B3;
+
+  /* Text Colors */
+  --color-text-text-200-primary: #1A2031;
+  --color-text-text-100-subtler: #525F7A;
+  --color-text-text-50-subtlest: #8B96AE;
+  --Text-color-text-normal: #1A2031;
+  --Text-color-text-brand: #0942B3;
+
+  /* Border Colors */
+  --Border-color-border-subtler: #C4CDDF;
+  --Border-color-border-bold: #697691;
+
+
+  /* ------------------- Font Tokens ------------------- */
+
+  /* Font Families */
+  --Font-Family-Family: 'Inter', sans-serif;
+  --Font-Family-Secondary: 'Lato', sans-serif;
+
+  /* Font Sizes */
+  --Font-Size-size-small: 11px;
+  --Font-Size-size-form-titles: 12px;
+  --Font-Size-size-regular: 13px;
+
+  /* Font Weights */
+  --Font-Weight-Weight-Regular: 450;
+  --Font-Weight-Weight-Medium: 550;
+
+  /* Font Line Heights */
+  --Font-Line_Height-font-lh-small: 16px;
+  --Font-Line_Height-font-lh-regular: 20px;
+
+  /* Font Spacing */
+  --Font-Spacing-font-letter-spacing-normal: 0px;
+  --Font-Spacing-font-letter-spacing-dense: -0.1px;
+
+
+  /* ------------------- Spacing Tokens ------------------- */
+
+  --Spacing-smallest: 2px;
+  --Spacing-small: 4px;
+  --Spacing-regular: 8px;
+  --Spacing-semi-medium: 12px;
+  --Spacing-medium: 16px;
+  --Spacing-semi-large: 24px;
+  --Spacing-large: 32px;
+  --Spacing-XL: 48px;
+}

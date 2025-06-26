@@ -18,28 +18,77 @@ export default function Description(){
 }
 
 
-function Tag({mess, val}){
+function Tag({mess, val, onRemove}){
     return <div className="bh">
         <span className="bi">{mess} : {val}</span>
-        <Close style={{ width: "18px", height: "18px" }} />
+        <Close style={{ width: "18px", height: "18px" }}  onClick={onRemove}/>
     </div>
 }
 
-export function Tags(){
-    return <div className="be">
-        <div>
-            <label className="bb">Tags</label>
-        </div>
-        <div className="bf">
-            <input className="bg" placeholder="Key"></input><span className="random">:</span><input className="bg" placeholder="Value"></input>
-        </div>
-        <div className="tags">
-            <Tag mess={"key_input"} val={"value_input"}/>
-            <Tag mess={"key1"} val={"val1"}/>
-            {/* <Tag mess={"key1"} val={"val1"}/>
-            <Tag mess={"key1"} val={"val1"}/> */}
-        </div>
+
+export function Tags() {
+  const [tags, setTags] = useState([
+    { id: 1, mess: "key_input", val: "value_input" },
+    { id: 2, mess: "key1", val: "val1" },
+  ]);
+  const [keyInput, setKeyInput] = useState("");
+  const [valInput, setValInput] = useState("");
+
+  const removeTag = (id) => {
+    setTags((prev) => prev.filter((tag) => tag.id !== id));
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter" && keyInput.trim() && valInput.trim()) {
+      e.preventDefault();
+      setTags((prev) => [
+        ...prev,
+        {
+          id: Date.now(), // unique ID
+          mess: keyInput.trim(),
+          val: valInput.trim(),
+        },
+      ]);
+      setKeyInput("");
+      setValInput("");
+    }
+  };
+
+  return (
+    <div className="be">
+      <div>
+        <label className="bb">Tags</label>
+      </div>
+      <div className="bf">
+        <input
+          className="bg"
+          placeholder="Key"
+          value={keyInput}
+          onChange={(e) => setKeyInput(e.target.value)}
+          onKeyDown={handleKeyDown}
+        />
+        <span className="random">:</span>
+        <input
+          className="bg"
+          placeholder="Value"
+          value={valInput}
+          onChange={(e) => setValInput(e.target.value)}
+          onKeyDown={handleKeyDown}
+        />
+      </div>
+
+      <div className="tags">
+        {tags.map((tag) => (
+          <Tag
+            key={tag.id}
+            mess={tag.mess}
+            val={tag.val}
+            onRemove={() => removeTag(tag.id)}
+          />
+        ))}
+      </div>
     </div>
+  );
 }
 
 
@@ -68,7 +117,7 @@ export function DropBox({ mess, Comp }) {
           <input placeholder="Your text here" className="hi" />
         </div>
         <div className="hf">
-          {Comp?<Comp />:<></>}
+          {Comp?<Comp/>:<></>}
         </div>
       </div>
     </div>

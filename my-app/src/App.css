@@ -2,6 +2,9 @@
   text-align: center;
 } */
 
+@import url('./tokens.css');
+
+
 .app {
   display: flex;
   font-family: 'Inter', sans-serif;
