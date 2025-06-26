@@ -97,6 +97,7 @@ export default function ServiceDetail() {
                         <TableHeader/>
                         <TableRow/>
                         <TableRow/>
+                        <TableRow/>
                         <TableRow noBorder={true}/>
                     </div>
 
