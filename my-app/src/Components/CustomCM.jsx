@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import {CheckX } from "./Icons";
+import { useState } from "react";
+import { CheckX } from "./Icons";
+
 
 export default function CustomCM({
   checked,
   onChange,
   disabled,
   error,
-  size = "md"
+  size = "md",
+  custom = false
 }) {
   const [isChecked, setIsChecked] = useState(checked ?? false);
   const isControlled = checked !== undefined;
@@ -22,7 +24,7 @@ export default function CustomCM({
 
   return (
     <div
-      className={`custom-checkbox ${size} ${active ? "checked" : ""} ${disabled ? "disabled" : ""} ${error ? "error" : ""}`}
+      className={`custom-checkbox ${size} ${active ? "checked" :custom? "custom-style" : ""} ${disabled ? "disabled" : ""} ${error ? "error" : ""} `}
       onClick={handleClick}
       role="checkbox"
       aria-checked={active}
