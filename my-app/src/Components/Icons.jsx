@@ -39,4 +39,4 @@ export { ReactComponent as Union } from '../assets/Union.svg';
 
 export { ReactComponent as LeftArrow } from '../assets/left_arrow.svg';
 export { ReactComponent as Check4 } from '../assets/check44.svg';
-
+export { ReactComponent as CheckX } from '../assets/checkx.svg';

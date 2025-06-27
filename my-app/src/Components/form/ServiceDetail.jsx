@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Description, { CustomCheckBox, DropBox, FigmaCheckbox, TableHeader, TableRow, Tags } from "../HelperComponets";
 import { Check, Down, Checkbox, Calendar, Time, Union, Info2 } from "../Icons"
+import TableWrapper from "../Table";
+import CustomCM from "../CustomCM";
+import { background } from "storybook/internal/theming";
 
 
 export function Heading({ mess, submess }) {
@@ -41,7 +44,7 @@ export default function ServiceDetail() {
                         <DropBox mess={"Version"} Comp={Down} />
                     </div>
                     <div className="bl" style={{ gap: "9px" }}>
-                        <Checkbox />
+                        <CustomCM size="lg"/>
                         <span className="fx">Create as a Container Database</span>
                     </div>
                 </div>
@@ -76,8 +79,9 @@ export default function ServiceDetail() {
                         <DropBox mess={"Start time"} Comp={Time} />
                     </div>
                     <DropBox mess={"Duration"} Comp={Down} />
-                    <div style={{ display: "flex", gap: "8px" }}>
-                        <FigmaCheckbox />
+                    <div style={{ display: "flex", gap: "8px",alignItems:"center" }}>
+                        
+                        <CustomCM size="md" style={{background:"#F2F4F8"}}/>
                         <span className="uj">Enable auto minor version update</span>
                     </div>
 
@@ -93,13 +97,15 @@ export default function ServiceDetail() {
                         <DropBox mess={"Snapshot"} Comp={Time}/>
                     </div>
                 
-                    <div style={{borderRadius: "5px",overflow: "hidden", border: "1px solid #DBE0EB",width: "100%"}}>
+                    {/* <div style={{borderRadius: "5px",overflow: "hidden", border: "1px solid #DBE0EB",width: "100%"}}>
                         <TableHeader/>
                         <TableRow/>
                         <TableRow/>
                         <TableRow/>
                         <TableRow noBorder={true}/>
-                    </div>
+                    </div> */}
+
+                    <TableWrapper/>
 
 
 

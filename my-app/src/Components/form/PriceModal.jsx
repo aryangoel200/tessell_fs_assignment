@@ -18,7 +18,7 @@ export default function PriceModal() {
                     $99.99
                 </span>
             </div>
-            <div className="button">
+            <div className="button" onClick={()=>{}}>
                 <PlusWhite />
                 <span className="ff">Create service</span>
             </div>

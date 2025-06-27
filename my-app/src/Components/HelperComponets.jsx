@@ -1,3 +1,4 @@
+import CustomCM from "./CustomCM";
 import { FigmaCustomCheckbox } from "./form/CustomCheckBox";
 import { Check, Close, CC, Asc, Desc, Trash } from "./Icons";
 import React, { useState } from "react";
@@ -160,7 +161,7 @@ export function TableHeader(){
     return <>
     <div style={{ display: "flex", alignItems: "flex-start", width: "100%" }}>
   <div className="td">
-    <CustomCheckbox2 />
+    <CustomCM size="md"/>
   </div>
 
   {/* FLEX CONTAINER FOR THE CELLS */}
@@ -174,18 +175,23 @@ export function TableHeader(){
 }
 
 
-export function TableRow({noBorder}){
-    return <>
-    <div style={{display: "flex"}}>
-        <div className={`td ${noBorder ? 'no-border' : ''}`}
-        style={{background: "white"}}>
-            <CustomCheckbox2/>
-        </div>
-        <TableCell mess={"Link"} code={1} noBd={noBorder}/>
-        <TableCell mess={"Row Title"} code={2} noBd={noBorder}/>
-        <TableCell mess={"Delete"} val={true} Comp={Trash} code={3} noBd={noBorder}/>
+export function TableRow({ noBorder, onDelete, rowId }) {
+  return (
+    <div style={{ display: "flex" }}>
+      <div className={`td ${noBorder ? 'no-border' : ''}`} style={{ background: "white" }}>
+        <CustomCM size="md"/>
+      </div>
+      <TableCell mess={"Link"} code={1} noBd={noBorder} />
+      <TableCell mess={"Row Title"} code={2} noBd={noBorder} />
+      <TableCell
+        mess={"Delete"}
+        val={true}
+        code={3}
+        noBd={noBorder}
+        Comp={() => <Trash onClick={() => onDelete(rowId)} style={{ cursor: "pointer" }} />}
+      />
     </div>
-    </>
+  );
 }
 
 
