@@ -3,7 +3,7 @@ import Description, { CustomCheckBox, DropBox, FigmaCheckbox, TableHeader, Table
 import { Check, Down, Checkbox, Calendar, Time, Union, Info2 } from "../Icons"
 import TableWrapper from "../Table";
 import CustomCM from "../CustomCM";
-import { background } from "storybook/internal/theming";
+
 
 
 export function Heading({ mess, submess }) {
