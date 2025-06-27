@@ -106,25 +106,90 @@ export function Tags() {
 
 
 
-export function DropBox({ mess, Comp }) {
+
+export function DropBox({ mess, Comp, click }) {
+  const [showOptions, setShowOptions] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+
+  const options = ["Option 1", "Option 2", "Option 3"];
+
+  const handleSelect = (opt) => {
+    setInputValue(opt);
+    setShowOptions(false);
+  };
+
   return (
-    <div className="ha">
+    <div className="ha" style={{ position: "relative" }}>
       <div className="hd">
         <span className="hb">{mess}</span>
       </div>
 
       <div className="he">
         <div className="hh">
-          <input placeholder="Your text here" className="hi" />
+          {click ? (
+            <div
+              className="hi"
+              style={{
+                
+                border: "none",
+                borderRadius: "4px",
+                background: "white",
+                cursor: "pointer",
+              }}
+              onClick={() => setShowOptions((prev) => !prev)}
+            >
+              {inputValue || "Select an option"}
+            </div>
+          ) : (
+            <input
+              placeholder="Your text here"
+              className="hi"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+            />
+          )}
         </div>
-        <div className="hf">
-          {Comp?<Comp/>:<></>}
-        </div>
+
+        <div className="hf">{Comp ? <Comp /> : null}</div>
       </div>
+
+      {click && showOptions && (
+        <div
+          className="dropdown-options"
+          style={{
+            position: "absolute",
+            top: "100%",
+            left: 0,
+            zIndex: 1000,
+            width: "100%",
+            background: "white",
+            border: "1px solid var(--Color-Surface-surface-200)",
+            borderRadius: "4px",
+            marginTop: "4px",
+            boxShadow: "0 4px 8px rgba(0,0,0,0.05)",
+          }}
+        >
+          {options.map((opt, idx) => (
+            <div
+              key={idx}
+              style={{
+                display: "flex",
+                padding: "8px 8px",
+                alignItems: "flex-start",
+                gap: "8px",
+                alignSelf: "stretch",
+                cursor:"pointer"
+              }}
+              onMouseDown={() => handleSelect(opt)}
+            >
+              {opt}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
-
 
 
 export function CustomCheckBox({ text, checked, onChange }) {

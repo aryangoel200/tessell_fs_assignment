@@ -40,8 +40,8 @@ export default function ServiceDetail() {
                         <span className="fx">Adjustable parameters, performance optimization,  fine-tuning options</span>
                     </div>
                     <div className="bl">
-                        <DropBox mess={"Software Release"} Comp={Down} />
-                        <DropBox mess={"Version"} Comp={Down} />
+                        <DropBox mess={"Software Release"} Comp={Down} click={true}/>
+                        <DropBox mess={"Version"} Comp={Down} click={true}/>
                     </div>
                     <div className="bl" style={{ gap: "9px" }}>
                         <CustomCM size="lg" custom="true"/>
@@ -78,7 +78,7 @@ export default function ServiceDetail() {
                         <DropBox mess={"Start day"} Comp={Calendar} />
                         <DropBox mess={"Start time"} Comp={Time} />
                     </div>
-                    <DropBox mess={"Duration"} Comp={Down} />
+                    <DropBox mess={"Duration"} Comp={Down} click={true}/>
                     <div style={{ display: "flex", gap: "8px",alignItems:"center" }}>
                         
                         <CustomCM size="md" style={{background:"#F2F4F8"}}/>
