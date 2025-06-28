@@ -1,0 +1,25 @@
+.tble_header{
+    display: flex;
+    height: var(--Spacing-XL, 48px);
+    padding: 12px;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-bottom: 1px solid var(--Color-Surface-surface-200, #DBE0EB);
+    background: var(--Surface-color-surface-secondary, #EEF1F6);
+    }
+
+    .prop{
+        display: flex;
+        height: var(--Spacing-XL, 48px);
+        padding: 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
+        align-self: stretch;
+        border-bottom: 1px solid var(--Color-Surface-surface-200, #DBE0EB);
+        background: var(--Surface-color-surface-secondary, #EEF1F6);
+    }

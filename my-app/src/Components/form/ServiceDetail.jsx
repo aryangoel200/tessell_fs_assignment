@@ -44,7 +44,7 @@ export default function ServiceDetail() {
                         <DropBox mess={"Version"} Comp={Down} click={true}/>
                     </div>
                     <div className="bl" style={{ gap: "9px" }}>
-                        <CustomCM size="lg" custom="true"/>
+                        <CustomCM size="lg" custom="true" disabled={true}/>
                         <span className="fx">Create as a Container Database</span>
                     </div>
                 </div>

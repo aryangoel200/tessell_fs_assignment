@@ -9,14 +9,16 @@ import "../Form.css";
 import "../Components/FigmaComponents/Button.css";
 import "../Components/Components.css";
 import "../Components/FigmaComponents/Input.css";
+import "../Components/FigmaComponents/Tables/Tables.css";
 import TableHeader from "../Components/FigmaComponents/Tables/Tables_header";
+import TableHeaderCell from "../Components/FigmaComponents/Tables/Tables_header";
 
 
 
 
 export default {
     title: "Components/Table_Header",
-    component: TableHeader,
+    component: TableHeaderCell,
     argTypes: {
         size: {
             control: "select",
@@ -35,7 +37,7 @@ export default {
 
 const Template = (args) => (
     <div style={{ width: "fit-content", padding: "8px" }}>
-        <TableHeader {...args}/>
+        <TableHeaderCell {...args}/>
     </div>
 );
 
