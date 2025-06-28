@@ -150,7 +150,7 @@ export function DropBox({ mess, Comp, click }) {
           )}
         </div>
 
-        <div className="hf">{Comp ? <Comp /> : null}</div>
+        {Comp ? <Comp className="hf"/> : null}
       </div>
 
       {click && showOptions && (

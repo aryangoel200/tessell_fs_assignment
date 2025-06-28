@@ -31,7 +31,18 @@ const config = {
           loader: require.resolve('@svgr/webpack'),
           options: {
             icon: true,
-            exportType: 'default' // 👈 MDX requires default export
+            exportType: 'default', // 👈 MDX requires default export
+            svgo: true,
+            svgoConfig: {
+              plugins: [
+                {
+                  name: 'removeAttrs',
+                  params: {
+                    attrs: '(fill|stroke)', 
+                  },
+                },
+              ],
+            },
           },
         },
         {

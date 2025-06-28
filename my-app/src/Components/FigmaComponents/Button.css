@@ -1,0 +1,126 @@
+.button{
+    
+    display: flex;
+    height: var(--Spacing-large, 32px);
+    padding: 0px var(--Spacing-semi-medium, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-regular, 8px);
+    align-self: stretch;
+    border-radius: var(--Spacing-small, 4px);
+    background: var(--Surface-color-surface-brand-intense, #0942B3);
+}
+
+.span{
+    color: var(--Text-color-text-inverse, #FFF);
+    /* Text-body/secondary/secondary */
+    font-family: var(--Font-Family-Family, Inter);
+    font-size: var(--Font-Size-size-small, 11px);
+    font-style: normal;
+    font-weight: var(--Font-Weight-Weight-Regular, 450);
+    line-height: var(--Font-Line_Height-font-lh-small, 16px); /* 145.455% */
+    letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
+}
+
+
+.button.Small{
+    height: var(--Spacing-large, 32px);
+}
+.button.Regular{
+    height: 36px;
+}
+
+.button.Large{
+    height: 40px
+}
+
+.button.true{
+    width: 143px;
+}
+
+.span.Small{
+    font-size: var(--Font-Size-size-regular, 13px);
+}
+.span.Regular{
+    font-size: var(--Font-Size-size-regular, 13px);
+}
+.span.Large{
+    font-size: var(--Font-Size-size-large, 15px);
+}
+
+.button.iconOnly.Small{
+    padding: 8px;
+}
+.button.iconOnly.Regular{
+    padding: 10px;
+}
+.button.iconOnly.Large{
+    padding: 12px;
+}
+.plus{
+    fill: var(--Icon-color-icon-inverse,#FFFFFF)
+}
+
+.cm{
+    width: 16px;
+    height: 16px;
+    fill: var(--Icon-color-icon-inverse,#FFFFFF) 
+}
+
+.plus.Small{
+    width: 10px;
+    height: 10px;
+}
+
+
+.button.Focus{
+    border-radius: 4px;
+    outline: 4px solid var(--Border-color-border-focus, #D1E0FF);
+    background: var(--Surface-color-surface-brand-intens, #002E8A);
+}
+
+.button.Hover{
+    background: var(--Surface-color-surface-brand-intens, #002E8A);
+}
+
+.button.loader{
+    background: var(--Surface-color-surface-brand-subtle);
+}
+
+.icon1.Large{
+    width: 18px;
+    height: 18px;
+}
+
+.cm.Disabled{
+    fill: var(--Icon-color-icon-disabled, #BCC2D0 );
+}
+
+
+.dd .path-1 {
+    fill: #EBF2FF
+}
+.dd .path-2{
+    fill: #0942B3
+}
+.dd .path-3{
+    fill: #0942B3
+}
+
+.icon1{
+    width: 16px;
+    height:16px;
+}
+
+.button.Disabled{
+    background: var(--Surface-color-surface-secondary, #EEF1F6);
+}
+.plus.Disabled{
+    fill: var(--Icon-color-icon-disabled,#BCC2D0)
+}
+
+.span.Disabled{
+    color: var(--Text-color-text-disabled, #BCC2D0);
+}
+
+

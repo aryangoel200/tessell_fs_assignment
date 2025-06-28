@@ -321,19 +321,18 @@
 
 
 .he {
+    height:36px;
     display: flex;
     padding: var(--Spacing-regular, 8px) var(--Spacing-semi-medium, 12px);
     align-items: center;
-    flex: 1 0 0;
+    /* flex: 1 0 0; */
     align-self: stretch;
     border-radius: 4px;
     border: 1px solid var(--Border-color-border-subtler, #C4CDDF);
     background: var(--Surface-color-surface-primary, #FFF);
 }
 
-/* .hf{
 
-} */
 
 .hh {
     display: flex;
@@ -341,7 +340,13 @@
     align-items: flex-start;
     align-self: stretch;
     width: 100%;
+    justify-content: center;
+    
 }
+.hf{
+    width: 16px;
+    height: 16px;}
+
 
 /* Hover styles on the entire `.he` */
 

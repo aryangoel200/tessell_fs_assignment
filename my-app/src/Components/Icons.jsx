@@ -40,3 +40,8 @@ export { ReactComponent as Union } from '../assets/Union.svg?react';
 export { ReactComponent as LeftArrow } from '../assets/left_arrow.svg?react';
 export { ReactComponent as Check4 } from '../assets/check44.svg?react';
 export { ReactComponent as CheckX } from '../assets/checkx.svg?react';
+export {ReactComponent as FcheckMark} from '../assets/figma_checkmark.svg'
+export {ReactComponent as Fplus} from '../assets/Fplus.svg'
+export {ReactComponent as Fspinner} from '../assets/Fspinner.svg'
+export {ReactComponent as Spinner} from '../assets/Spinner.svg'
+export {ReactComponent as EyeClose} from '../assets/EyeClosed.svg'

@@ -88,6 +88,10 @@ width: 16px;
 
 
 
+
+
+
+
 .custom-checkbox {
     display: flex;
     justify-content: center;
@@ -152,6 +156,11 @@ width: 16px;
   border: none;
   background-color: var(--Color-Surface-surface-100, #F2F4F8);
 }
+
+
+
+
+
 
 
 

@@ -1,0 +1,110 @@
+/* ======= Main Container ======= */
+.main {
+  height: fit-content;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Spacing-regular, 8px);
+  align-self: stretch;
+}
+
+/* ======= Label ======= */
+.lb {
+  display: flex;
+  align-items: center;
+  gap: var(--Spacing-small, 4px);
+  color: var(--Text-color-text-normal, #1A2031);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: var(--Font-Family-Family, Inter);
+  font-size: var(--Font-Size-size-form-titles, 12px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--Font-Line_Height-font-lh-small, 16px);
+  letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
+}
+
+/* ======= Input Container (Wrapper) ======= */
+.first {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--Spacing-regular, 8px) var(--Spacing-semi-medium, 12px);
+  flex: 0 1 auto;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid var(--Border-color-border-subtler, #C4CDDF);
+  background: var(--Surface-color-surface-primary, #FFF);
+}
+
+/* === Variants === */
+.first.Small {
+  height: 32px;
+}
+
+.first.Description {
+  height: 92px;
+}
+
+.first.focus {
+  border-radius: var(--Spacing-small, 4px);
+  outline: 4px solid var(--Border-color-border-focus, #D1E0FF);
+}
+
+.first.selected {
+  border: 1px solid var(--Border-color-border-brand, #0942B3);
+  background: var(--Surface-color-surface-primary, #FFF);
+}
+
+.first.disabled {
+  border: 1px solid var(--Border-color-border-subtler, #C4CDDF);
+  background: var(--Surface-color-surface-playground, #F8F9FB);
+  cursor: not-allowed;
+}
+
+/* ======= Input Element ======= */
+.input {
+  height: 20px;
+  flex: 1 0 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--Text-color-text-normal, #1A2031);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: var(--Font-Family-Family, Inter);
+  font-size: var(--Font-Size-size-regular, 13px);
+  font-style: normal;
+  font-weight: var(--Font-Weight-Weight-Regular, 450);
+  line-height: var(--Font-Line_Height-font-lh-regular, 20px);
+  letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
+}
+
+/* === Variants === */
+.input.Small {
+  font-size: var(--Font-Size-size-small, 11px);
+  height: 16px;
+}
+
+.input.disabled {
+  color: var(--Text-color-text-disabled, #BCC2D0);
+  pointer-events: none;
+  background: var(--Surface-color-surface-playground, #F8F9FB);
+}
+
+/* ======= Icon (Check_input) ======= */
+.Check_input {
+  width: 16px;
+  height: 16px;
+  fill: var(--Text-color-text-subtlest, #8B96AE);
+}
+
+/* === Variants === */
+.Check_input.Small {
+  width: 12px;
+  height: 12px;
+}
+
+.Check_input.disabled {
+  fill: var(--Text-color-text-disabled, #BCC2D0);
+}
