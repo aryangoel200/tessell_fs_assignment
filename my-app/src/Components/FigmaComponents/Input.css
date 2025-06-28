@@ -108,3 +108,10 @@
 .Check_input.disabled {
   fill: var(--Text-color-text-disabled, #BCC2D0);
 }
+.Check_input.filled{
+  fill: var(--Text-color-text-normal,#1A2031);
+}
+
+.Check_input.selected{
+  fill: var(--Text-color-text-normal,#1A2031);
+}

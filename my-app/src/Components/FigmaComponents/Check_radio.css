@@ -1,0 +1,205 @@
+/* ========== Main Container: CheckBox ========== */
+.mainCB {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: var(--Spacing-small, 4px);
+    border: 1px solid var(--Border-color-border-bold, #697691);
+}
+
+.mainCB.Large {
+    width: 20px;
+    height: 20px;
+}
+
+.mainCB.disabled {
+    border-radius: var(--Spacing-small, 4px);
+    border: 1px solid var(--Border-color-border-subtlest, #DBE0EB);
+    background: var(--Surface-color-surface-secondary, #EEF1F6);
+}
+
+
+/* ========== State Modifiers ========== */
+.mainCB.xim {
+    background: none;
+}
+
+.mainCB.m {
+    border-radius: var(--Spacing-small, 4px);
+    border: 1px solid var(--Border-color-border-brand, #0942B3);
+    background: var(--Surface-color-surface-brand-subtle, #EBF2FF);
+}
+
+
+
+.mainCB.c {
+    border-radius: var(--Spacing-small, 4px);
+    background: var(--Surface-color-surface-brand-intense, #0942B3);
+    border: 1px solid #0942B3;
+}
+
+.mainCB.Focus {
+    border-radius: var(--Spacing-small, 4px);
+    outline: 4px solid var(--Border-color-border-focus, #D1E0FF);
+    background: none;
+    border: 1px solid #002E8A;
+}
+
+/* ========== Hover and Focus on States ========== */
+.mainCB.xim.Hover {
+    border: 1px solid #002E8A;
+    background: var(--Surface-color-surface-brand-subtle, #EBF2FF);
+}
+
+.mainCB.m.Hover,
+.mainCB.m.Focus {
+    border: 1px solid #002E8A;
+}
+
+.mainCB.c.Hover,
+.mainCB.c.Focus {
+    border: 1px solid #002E8A;
+    background: #002E8A;
+}
+
+.mainCB.c.disabled,
+.mainCB.m.disabled {
+    border-radius: var(--Spacing-small, 4px);
+    border: 1px solid var(--Border-color-border-subtlest, #DBE0EB);
+    background: var(--Surface-color-surface-secondary, ¸);
+}
+
+/* ========== Minus Icon ========== */
+.minusCB {
+    width: 10px;
+    height: 10px;
+    stroke: var(--Surface-color-surface-brand-intense, #0942B3);
+}
+
+.minusCB.Large {
+    width: 14px;
+    height: 14px;
+    stroke: var(--Surface-color-surface-brand-intense, #0942B3);
+}
+
+.minusCB.Hover,
+.minusCB.Focus {
+    stroke: #002E8A;
+}
+
+.minusCB.disabled {
+    stroke: #FFFFFF;
+}
+
+/* ========== Check Icon ========== */
+.checkCB {
+    width: 10px;
+    height: 10px;
+    stroke: var(--Icon-color-icon-inverse, #FFFFFF);
+    fill: #0942B3;
+}
+
+.checkCB.Large {
+    width: 14px;
+    height: 14px;
+}
+
+.checkCB.Hover,
+.checkCB.Focus {
+    fill: #002E8A;
+}
+
+.checkCB.disabled {
+    stroke: #FFFFFF;
+    fill: var(--Surface-color-surface-secondary, #EEF1F6);
+}
+
+
+
+
+
+
+
+.mainRd {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: var(--Spacing-large, 32px);
+    border: 1px solid var(--Border-color-border-bold, #697691);
+    background: var(--Surface-color-surface-primary, #FFF);
+}
+
+
+.mainRd.Large{
+    width: 20px;
+    height: 20px;
+}
+
+.mainRd.true{
+    border: 1px solid var(--Surface-color-surface-brand-intense, #0942B3);
+}
+
+
+.dotRd{
+    width: 6px;
+    height: 6px;
+
+    fill: var(--Surface-color-surface-brand-intense, #0942B3);
+}
+
+.dotRd.Focus, .dotRd.Hover{
+    fill: var(--Surface-color-surface-brand-intens, #002E8A);
+}
+
+
+
+.dotRd.Large{
+     width: 8px;
+    height: 8px;
+}
+
+.mainRd.Focus{
+    border-radius: var(--Spacing-large, 32px);
+    outline: 4px solid var(--Border-color-border-focus, #D1E0FF);
+    
+}
+
+.mainRd.Focus,.mainRd.Hover{
+    border: 1px solid var(--Surface-color-surface-brand-intens, #002E8A);
+}
+
+.mainRd.Hover.false{
+    background: var(--Surface-color-surface-brand-subtle, #EBF2FF);
+}
+
+.mainRd.disabled{
+    border-radius: var(--Spacing-large, 32px);
+    border: 1px solid var(--Border-color-border-subtlest, #DBE0EB);
+    background: var(--Surface-color-surface-secondary, #EEF1F6);
+    }
+
+.dotRd.disabled{
+    fill: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
