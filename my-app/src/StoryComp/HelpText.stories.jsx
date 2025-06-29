@@ -9,23 +9,20 @@ import "../Form.css";
 import "../Components/FigmaComponents/Button.css";
 import "../Components/Components.css";
 import "../Components/FigmaComponents/Input.css";
+import { HelpText } from "../Components/FigmaComponents/Dropdown";
+
 
 
 
 
 export default {
-    title: "Components/Input/Base",
-    component: InputBase,
+    title: "Components/Checks_Radios/HelpText",
+    component: HelpText,
     argTypes: {
-        size: {
+        type: {
             control: "select",
-            options: ["Default", "Small", "Large"],
+            options: ["Primary", "Danger", "Success","Default","Warning"],
         },
-        state: {
-            control: "select",
-            options: ["default", "filled", "focus","selected","disabled"],
-        },
-
     },
 };
 
@@ -33,8 +30,8 @@ export default {
 
 
 const Template = (args) => (
-    <div style={{ width: "fit-content", padding: "8px" }}>
-        <InputBase {...args}/>
+    <div style={{ width: "fit-content", padding: "8px" , border:"1px dotted #525F7A"}}>
+        <HelpText {...args}/>
     </div>
 );
 

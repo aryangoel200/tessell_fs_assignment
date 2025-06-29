@@ -10,16 +10,16 @@
     letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
 }
 
-.helpTetx.Danger{
+.helpText.Danger{
     color: #B21C1C;
 }
-.helpTetx.Warnig{
+.helpText.Warning{
     color: #EE8B10;
 }
-.helpTetx.Success{
+.helpText.Success{
     color: #20845A;
 }
-.helpTetx.Primary{
+.helpText.Primary{
     color: #0942B3;
 }
 

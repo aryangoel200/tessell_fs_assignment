@@ -12,7 +12,7 @@ import CheckBoxLA, { RadioLa } from "../Components/FigmaComponents/Check_radio";
 
 
 export default {
-    title: "Components/Radios",
+    title: "Components/Checks_Radios/Radios",
     component: RadioLa,
     argTypes: {
         size: {

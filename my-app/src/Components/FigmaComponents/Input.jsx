@@ -3,7 +3,6 @@ import { Check, CheckX, DownArrow, EyeClose } from "../Icons";
 
 export default function Input({ type,size,state }) {
   let content = <Check />;
-
   if (type === "Dropdown") {
     content = <DownArrow />;
   } else if (type === "Password") {
@@ -15,7 +14,7 @@ export default function Input({ type,size,state }) {
       <span className="lb">{type !== "Password"?"Label":"Password"}</span>
       <div className={`first ${type}`}>
         <input className="input" placeholder={type !== "Password"?"Text Input":"XXXXXXXXXXXX"}/>
-            {content}
+            <div className="rdm">{content}</div>
       </div>
       
     </div>

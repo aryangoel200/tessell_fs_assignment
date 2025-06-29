@@ -9,26 +9,27 @@ import "../Form.css";
 import "../Components/FigmaComponents/Button.css";
 import "../Components/Components.css";
 import "../Components/FigmaComponents/Input.css";
-import "../Components/FigmaComponents/Tables/Tables.css";
-import TableHeader from "../Components/FigmaComponents/Tables/Tables_header";
-import TableHeaderCell from "../Components/FigmaComponents/Tables/Tables_header";
+import "../Components/FigmaComponents/Tag.css";
+import "../Components/FigmaComponents/Check_group.css";
+import TagsLA from "../Components/FigmaComponents/Tag";
+import Check_group from "../Components/FigmaComponents/Check_group";
+
 
 
 
 
 export default {
-    title: "Components/Table/Header_cell",
-    component: TableHeaderCell,
+    title: "Components/Checks_Radios/Groups",
+    component: Check_group,
     argTypes: {
-        contentType: {
-            control: "select",
-            options: ["Selection", "Spacer", "Left","Right"],
+        selected: {
+            control: "boolean",
+            options: ["true", "false"],
         },
-        sort_by: {
+        state: {
             control: "select",
-            options: ["ascending", "descending","default"],
+            options: ["Default", "disabled","Hover"],
         },
-        
 
     },
 };
@@ -38,13 +39,13 @@ export default {
 
 const Template = (args) => (
     <div style={{ width: "fit-content", padding: "8px" }}>
-        <TableHeaderCell {...args}/>
+        <Check_group {...args}/>
     </div>
 );
 
 // ✅ Default button with text
 export const Default = Template.bind({});
 Default.args = {
-    contentType: "Left",
-    sort_by: "ascending"
+    selected:"",
+    state: ""
 };

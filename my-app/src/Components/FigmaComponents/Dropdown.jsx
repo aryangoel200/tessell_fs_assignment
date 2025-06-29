@@ -37,6 +37,7 @@ export function DDItem({Checked}){
 
 
 export function HelpText({type}){
+    
 return <span className={`helpText ${type}`}>
     Only numbers between 100 ~ 1000 are allowed
 </span>

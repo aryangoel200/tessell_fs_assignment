@@ -15,7 +15,7 @@ import TagsLA from "../Components/FigmaComponents/Tag";
 import DropDownLA from "../Components/FigmaComponents/Dropdown";
 
 export default {
-    title: "Components/DropDown",
+    title: "Components/Input/DropDown",
     component: DropDownLA,
     argTypes: {
         size: {

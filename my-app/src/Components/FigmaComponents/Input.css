@@ -28,7 +28,7 @@
 .first {
   height: 36px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   padding: var(--Spacing-regular, 8px) var(--Spacing-semi-medium, 12px);
   flex: 0 1 auto;
@@ -114,4 +114,9 @@
 
 .Check_input.selected{
   fill: var(--Text-color-text-normal,#1A2031);
+}
+
+
+.rdm{
+  margin-top: 2px;
 }

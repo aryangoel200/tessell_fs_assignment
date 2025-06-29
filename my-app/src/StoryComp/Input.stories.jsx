@@ -14,7 +14,7 @@ import "../Components/FigmaComponents/Input.css";
 
 
 export default {
-    title: "Components/Input",
+    title: "Components/Input/Input",
     component: Button,
     argTypes: {
         type: {

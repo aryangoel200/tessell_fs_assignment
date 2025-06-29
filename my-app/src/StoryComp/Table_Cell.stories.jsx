@@ -18,7 +18,7 @@ import TableCell from "../Components/FigmaComponents/Tables/TableRow";
 
 
 export default {
-    title: "Components/Table_Cell",
+    title: "Components/Table/Cell",
     component: TableCell,
     argTypes: {
         contentType: {
