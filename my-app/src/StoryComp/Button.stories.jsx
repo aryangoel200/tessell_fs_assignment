@@ -15,7 +15,7 @@ export default {
   argTypes: {
     type: {
       control: "select",
-      options: ["Primary"],
+      options: ["Primary","Secondary","Tertiary"],
     },
     size: {
       control: "select",
@@ -50,7 +50,7 @@ export default {
 
 
 const Template = (args) => (
-  <div style={{ width: "fit-content", padding: "8px" }}>
+  <div style={{ width: "fit-content", padding: "8px", border: "1px dotted red" }}>
     <Button {...args}>Submit</Button>
   </div>
 );

@@ -1,5 +1,5 @@
-.button{
-    
+.buttonF{
+
     display: flex;
     height: var(--Spacing-large, 32px);
     padding: 0px var(--Spacing-semi-medium, 12px);
@@ -9,6 +9,8 @@
     align-self: stretch;
     border-radius: var(--Spacing-small, 4px);
     background: var(--Surface-color-surface-brand-intense, #0942B3);
+    border: none;
+    box-shadow: none
 }
 
 .span{
@@ -23,18 +25,18 @@
 }
 
 
-.button.Small{
+.buttonF.Small{
     height: var(--Spacing-large, 32px);
 }
-.button.Regular{
+.buttonF.Regular{
     height: 36px;
 }
 
-.button.Large{
+.buttonF.Large{
     height: 40px
 }
 
-.button.true{
+.buttonF.true{
     width: 143px;
 }
 
@@ -48,13 +50,13 @@
     font-size: var(--Font-Size-size-large, 15px);
 }
 
-.button.iconOnly.Small{
+.buttonF.iconOnly.Small{
     padding: 8px;
 }
-.button.iconOnly.Regular{
+.buttonF.iconOnly.Regular{
     padding: 10px;
 }
-.button.iconOnly.Large{
+.buttonF.iconOnly.Large{
     padding: 12px;
 }
 .plus{
@@ -73,17 +75,17 @@
 }
 
 
-.button.Focus{
+.buttonF.Focus{
     border-radius: 4px;
     outline: 4px solid var(--Border-color-border-focus, #D1E0FF);
     background: var(--Surface-color-surface-brand-intens, #002E8A);
 }
 
-.button.Hover{
+.buttonF.Hover{
     background: var(--Surface-color-surface-brand-intens, #002E8A);
 }
 
-.button.loader{
+.buttonF.loader{
     background: var(--Surface-color-surface-brand-subtle);
 }
 
@@ -112,7 +114,7 @@
     height:16px;
 }
 
-.button.Disabled{
+.buttonF.Disabled{
     background: var(--Surface-color-surface-secondary, #EEF1F6);
 }
 .plus.Disabled{
@@ -122,5 +124,112 @@
 .span.Disabled{
     color: var(--Text-color-text-disabled, #BCC2D0);
 }
+
+
+
+/*----------------------------------------------------------------------*/
+
+
+.buttonF.Secondary{
+    border-radius: var(--Spacing-small, 4px);
+    border: 1px solid var(--Border-color-border-subtler, #C4CDDF);
+    background: var(--Surface-color-surface-playground, #F8F9FB);
+}
+
+.buttonF.Secondary.Hover{
+    background: #F8F9FB;
+}
+
+.buttonF.Secondary.Focus, .buttonF.Secondary.loader{
+    border-radius: var(--Spacing-small, 4px);
+    border: 1px solid var(--Border-color-border-subtler, #C4CDDF);
+    background: var(--Surface-color-surface-playground, #F8F9FB);
+}
+
+.buttonF.Tertiary{
+    background: none;
+    border-color: none;
+}
+
+.plus.Secondary,
+.plus.Tertiary{
+    fill: #525F7A;
+}
+.span.Secondary,
+.span.Tertiary{
+    color: #525F7A;
+}
+
+.plus.Secondary.Hover,
+.plus.Tertiary.Hover{
+    fill: #0942B3;
+}
+.span.Secondary.Hover,
+.span.Tertiary.Hover{
+    color:#0942B3;
+}
+.cm.Secondary,
+.cm.Tertiary{
+    fill: #525F7A;
+}
+
+.cm.Secondary.Hover,
+.cm.Tertiary.Hover{
+    fill:  #0942B3;
+}
+
+.plus.Secondary.Focus,
+.plus.Tertiary.Focus{
+    fill: #1A2031;
+}
+
+.span.Secondary.Focus,
+.span.Tertiary.Focus{
+    color: #1A2031;
+}
+
+.cm.Secondary.Focus,
+.cm.Tertiary.Focus{
+    fill: #1A2031;
+}
+
+
+.buttonF.Secondary.Disabled{
+    border-radius: var(--Spacing-small, 4px);
+    border: 1px solid var(--Border-color-border-subtler, #C4CDDF);
+    background: var(--Surface-color-surface-secondary, #EEF1F6);
+}
+
+.plus.Secondary.Disabled,
+.plus.Tertiary.Disabled{
+    fill: #BCC2D0;
+}
+
+.span.Secondary.Disabled,
+.span.Tertiary.Disabled{
+    color: #BCC2D0;
+}
+
+.cm.Secondary.Disabled,
+.cm.Tertiary.Disabled{
+    fill: #BCC2D0;
+}
+
+.buttonF.Secondary .dd .path-2,
+.buttonF.Tertiary .dd .path-2 {
+    fill: #13171E;
+}
+.buttonF.Secondary .dd .path-3 ,
+.buttonF.Tertiary .dd .path-3{
+    fill: #13171E;
+}
+
+
+
+
+
+
+
+
 
 

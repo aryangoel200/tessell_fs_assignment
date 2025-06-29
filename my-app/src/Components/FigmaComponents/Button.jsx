@@ -11,14 +11,14 @@ export default function Button({ type, size, _variantProp, state }) {
     return (
 
 
-        <div className={`button ${size} ${_variantProp} ${state}`}>
+        <div className={`buttonF ${size} ${_variantProp} ${state} ${type}`}>
 
             { isIconOnly  ? (
-                <FcheckMark className={`cm ${state}`}/>
-            ) : isSpinner ? (<><Spinner className={`icon1 dd ${state} ${size}`} /></>) : (
+                <FcheckMark className={`cm ${state} ${type}`}/>
+            ) : isSpinner ? (<><Spinner className={`icon1 dd ${state} ${size} ${type}`} /></>) : (
                 <>
-                    <Fplus className={`plus ${size} ${state}`} />
-                    <span className={`span ${size} ${state}`}>Button CTA</span>
+                    <Fplus className={`plus ${size} ${state} ${type}`} />
+                    <span className={`span ${size} ${state} ${type}`}>Button CTA</span>
                 </>
             )
             }
