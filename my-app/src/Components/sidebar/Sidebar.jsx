@@ -25,7 +25,7 @@ export default function Sidebar() {
                     <Switcher />
                     <span className='ae'>Apps</span>
                 </div>
-                <div>
+                <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
                     <div className='af' style={{ width: "187px" }} onClick={() => { setVisible(!visible) }}>
                         <span className='ag'>DB Services</span>
                         <DownArrow />

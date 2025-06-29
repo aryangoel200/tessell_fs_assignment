@@ -10,9 +10,7 @@ import { DDItem } from "./FigmaComponents/Dropdown";
 export default function Description(){
     return (
     <div className="ba">
-            <div>
             <span className="bb">Description (optional)</span>
-        </div>
         <div className="bc">
             <input className="bd" placeholder="Add a description"></input>
         </div>

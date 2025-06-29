@@ -197,8 +197,6 @@ letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
     align-self: stretch;
     border-radius: 8px;
     background: var(--Color-Surface-surface-0, #FFF);
-    
-
 }
 
 .yb {
