@@ -12,23 +12,31 @@ import "../Components/FigmaComponents/Input.css";
 import "../Components/FigmaComponents/Tables/Tables.css";
 import TableHeader from "../Components/FigmaComponents/Tables/Tables_header";
 import TableHeaderCell from "../Components/FigmaComponents/Tables/Tables_header";
+import TableCell from "../Components/FigmaComponents/Tables/TableRow";
 
 
 
 
 export default {
-    title: "Components/Table_Header",
-    component: TableHeaderCell,
+    title: "Components/Table_Cell",
+    component: TableCell,
     argTypes: {
         contentType: {
             control: "select",
-            options: ["Selection", "Spacer", "Left","Right"],
+            options: ["Text","Number","Link","checkbox","Status","Spacer","Action"],
         },
-        sort_by: {
+        isSelected: {
+            control: "boolean",
+            options: [true, false],
+        },
+        density: {
             control: "select",
-            options: ["ascending", "descending","default"],
+            options: ["Compact", "Expanded"],
         },
-        
+        state:{
+            control: "select",
+            options: ["Default","Hover","Focus","Active"]
+        }
 
     },
 };
@@ -38,13 +46,16 @@ export default {
 
 const Template = (args) => (
     <div style={{ width: "fit-content", padding: "8px" }}>
-        <TableHeaderCell {...args}/>
+        <TableCell {...args}/>
     </div>
 );
 
 // ✅ Default button with text
 export const Default = Template.bind({});
 Default.args = {
-    contentType: "Left",
-    sort_by: "ascending"
+    contentType: "checkbox",
+    isSelected: true,
+    density:"Expanded",
+    state:"Default"
+    
 };
