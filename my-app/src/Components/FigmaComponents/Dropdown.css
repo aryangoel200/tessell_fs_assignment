@@ -1,0 +1,119 @@
+.helpText{
+    color: var(--Text-color-text-subtlest, #8B96AE);
+
+    /* Text-body/secondary/secondary */
+    font-family: var(--Font-Family-Family, Inter);
+    font-size: var(--Font-Size-size-small, 11px);
+    font-style: normal;
+    font-weight: var(--Font-Weight-Weight-Regular, 450);
+    line-height: var(--Font-Line_Height-font-lh-small, 16px); /* 145.455% */
+    letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
+}
+
+.helpTetx.Danger{
+    color: #B21C1C;
+}
+.helpTetx.Warnig{
+    color: #EE8B10;
+}
+.helpTetx.Success{
+    color: #20845A;
+}
+.helpTetx.Primary{
+    color: #0942B3;
+}
+
+
+
+
+
+
+
+
+.maindd{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ddLa{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-small, 4px);
+    align-self: stretch;
+}
+
+.ddItem{
+    
+    display: flex;
+    padding: 8px 8px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+.spanItem{
+    
+    color: var(--Text-color-text-normal, #1A2031);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Text-body/primary/primary */
+    font-family: var(--Font-Family-Family, Inter);
+    font-size: var(--Font-Size-size-regular, 13px);
+    font-style: normal;
+    font-weight: var(--Font-Weight-Weight-Regular, 450);
+    line-height: var(--Font-Line_Height-font-lh-regular, 20px); /* 153.846% */
+    letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
+}
+
+.spanItem.true{
+    color: var(--Text-color-text-normal, #1A2031);
+}
+.ddicon{
+    width: 16px;
+    height: 16px;
+    fill: #8B96AE;
+}
+
+.ddicon.true{
+    fill: #0942B3;
+}
+
+.spanItem2{
+    color: var(--Text-color-text-subtlest, #8B96AE);
+text-align: center;
+
+    /* Text-body/secondary/secondary caption */
+    font-family: var(--Font-Family-Family, Inter);
+    font-size: var(--Font-Size-size-small, 11px);
+    font-style: italic;
+    font-weight: 400;
+    line-height: var(--Font-Line_Height-font-lh-small, 16px); /* 145.455% */
+    letter-spacing: var(--Font-Spacing-font-letter-spacing-normal, 0px);
+}
+
+.spanItem.true, .spanItem2.true{
+    color: #0942B3;
+}
+
+.qwerty{
+    width:360px;
+    display: flex;
+    height:36px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: var(--Spacing-small, 4px);
+    padding: 8px 8px;
+}
+
+.qwerty.true{
+    background: var(--Surface-color-surface-brand-subtle, #EBF2FF);
+}   
+
+.randomShit{
+    display: flex;
+    align-items:center;
+    gap: 8px;
+    flex: 1 0 0;
+    justify-content: flex-start;
+}

@@ -30,18 +30,18 @@ export default function ServiceDetail() {
                     <Heading mess={"Service Details"} submess={"Service Name, Service Description, Software Release"} />
                 </div>
                 <div className="ft" style={{ width: "657px" }}>
-                    <DropBox mess={"Service Name"} Comp={Check} />
+                    <DropBox mess={"Service Name"} Comp={Check} val={"oracle_09_2023"}/>
                     <Description />
                     <Tags />
                 </div>
                 <div className="bj">
-                    <div style={{ display: "flex", flexDirection: "column" }}>
+                    <div style={{ display: "flex", flexDirection: "column", gap: "2px" }}>
                         <span className="bk">Engine configuration</span>
                         <span className="fx">Adjustable parameters, performance optimization,  fine-tuning options</span>
                     </div>
                     <div className="bl">
                         <DropBox mess={"Software Release"} Comp={Down} click={true}/>
-                        <DropBox mess={"Version"} Comp={Down} click={true}/>
+                        <DropBox mess={"Version"} Comp={Down} click={true} val={"21.0.0.0.0"}/>
                     </div>
                     <div className="bl" style={{ gap: "9px" }}>
                         <CustomCM size="lg" custom="true" disabled={true}/>
@@ -75,10 +75,10 @@ export default function ServiceDetail() {
                             </div>
                     </div>
                     <div style={{ display: "flex", gap: "16px", flexWrap: "wrap"}}>
-                        <DropBox mess={"Start day"} Comp={Calendar} />
-                        <DropBox mess={"Start time"} Comp={Time} />
+                        <DropBox mess={"Start day"} Comp={Calendar} val={"Sunday"}/>
+                        <DropBox mess={"Start time"} Comp={Time} val={"04:00"}/>
                     </div>
-                    <DropBox mess={"Duration"} Comp={Down} click={true}/>
+                    <DropBox mess={"Duration"} Comp={Down} click={true} val={"0.5"}/>
                     <div style={{ display: "flex", gap: "8px",alignItems:"center" }}>
                         
                         <CustomCM size="md" style={{background:"#F2F4F8"}}/>
@@ -93,8 +93,8 @@ export default function ServiceDetail() {
                     </div>
 
                     <div style={{display:"flex", gap:"16px", flexWrap:"wrap"}}>
-                        <DropBox mess={"SLA"} />
-                        <DropBox mess={"Snapshot"} Comp={Time}/>
+                        <DropBox mess={"SLA"} val={"Dev-QA-SLA"}/>
+                        <DropBox mess={"Snapshot"} Comp={Time} val={"04:00"}/>
                     </div>
                 
                     {/* <div style={{borderRadius: "5px",overflow: "hidden", border: "1px solid #DBE0EB",width: "100%"}}>

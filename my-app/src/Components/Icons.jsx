@@ -59,3 +59,4 @@ export {ReactComponent as Checktag} from '../assets/arr/check_tag.svg'
 export {ReactComponent as Plustag} from '../assets/arr/plus_tag.svg'
 
 export {ReactComponent as SW} from '../assets/arr/sW.svg'
+export {ReactComponent as DDIt} from '../assets/arr/ddIt.svg'

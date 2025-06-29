@@ -2,6 +2,8 @@ import CustomCM from "./CustomCM";
 import { FigmaCustomCheckbox } from "./form/CustomCheckBox";
 import { Check, Close, CC, Asc, Desc, Trash } from "./Icons";
 import React, { useState } from "react";
+import { DDItem } from "./FigmaComponents/Dropdown";
+
 
 
 
@@ -57,9 +59,9 @@ export function Tags() {
 
   return (
     <div className="be">
-      <div>
+      
         <label className="bb">Tags</label>
-      </div>
+      
       <div className="bf">
         <input
           className="bg"
@@ -107,11 +109,15 @@ export function Tags() {
 
 
 
-export function DropBox({ mess, Comp, click }) {
-  const [showOptions, setShowOptions] = useState(false);
-  const [inputValue, setInputValue] = useState("");
 
-  const options = ["Option 1", "Option 2", "Option 3"];
+ // Ensure this import is correct
+
+export function DropBox({ mess, Comp, click,val="" }) {
+  const [showOptions, setShowOptions] = useState(false);
+  const [inputValue, setInputValue] = useState(val); // ✅ User-controlled input
+
+  const placeholder = "Select an option";
+  const options = ["Option 1", "Option 2", "0012"];
 
   const handleSelect = (opt) => {
     setInputValue(opt);
@@ -130,19 +136,19 @@ export function DropBox({ mess, Comp, click }) {
             <div
               className="hi"
               style={{
-                
                 border: "none",
                 borderRadius: "4px",
                 background: "white",
                 cursor: "pointer",
+                color: inputValue ? "inherit" : "#A0A0A0", // Placeholder color
               }}
               onClick={() => setShowOptions((prev) => !prev)}
             >
-              {inputValue || "Select an option"}
+              {inputValue || placeholder}
             </div>
           ) : (
             <input
-              placeholder="Your text here"
+              placeholder={placeholder}
               className="hi"
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
@@ -150,7 +156,7 @@ export function DropBox({ mess, Comp, click }) {
           )}
         </div>
 
-        {Comp ? <Comp className="hf"/> : null}
+        {Comp ? <Comp className="hf" /> : null}
       </div>
 
       {click && showOptions && (
@@ -170,19 +176,8 @@ export function DropBox({ mess, Comp, click }) {
           }}
         >
           {options.map((opt, idx) => (
-            <div
-              key={idx}
-              style={{
-                display: "flex",
-                padding: "8px 8px",
-                alignItems: "flex-start",
-                gap: "8px",
-                alignSelf: "stretch",
-                cursor:"pointer"
-              }}
-              onMouseDown={() => handleSelect(opt)}
-            >
-              {opt}
+            <div key={idx} onMouseDown={() => handleSelect(opt)}>
+              <DDItem Checked={inputValue === opt ? "true" : ""} />
             </div>
           ))}
         </div>
