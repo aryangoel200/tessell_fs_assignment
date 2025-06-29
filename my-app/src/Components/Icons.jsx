@@ -55,3 +55,7 @@ export {ReactComponent as DeleteLa} from '../assets/arr/DeleteLA.svg'
 export {ReactComponent as EditLa} from '../assets/arr/EditLA.svg'
 export {ReactComponent as CopyLa} from '../assets/arr/CopyLA.svg'
 
+export {ReactComponent as Checktag} from '../assets/arr/check_tag.svg'
+export {ReactComponent as Plustag} from '../assets/arr/plus_tag.svg'
+
+export {ReactComponent as SW} from '../assets/arr/sW.svg'

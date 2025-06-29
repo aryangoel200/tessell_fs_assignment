@@ -1,0 +1,87 @@
+/* ===========================
+   Main Switch Container
+=========================== */
+.mainSw {
+    display: flex;
+    height: 26px;
+    padding: 2px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ===========================
+   Switch Track (.secSw)
+=========================== */
+.secSw {
+    display: flex;
+    width: 38px;
+    padding: 2px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 1000px;
+    background: var(--Surface-color-surface-tertiary, #C4CDDF);
+    border: 1px solid #fff;
+}
+
+/* -- Size Modifier -- */
+.secSw.Small {
+    width: 28px;
+}
+
+/* -- State: Focus -- */
+.secSw.Focus {
+    outline: 4px solid #D1E0FF;
+}
+
+/* -- State: Active (true) -- */
+.secSw.true {
+    justify-content: flex-end;
+    background: var(--Surface-color-surface-brand-intense, #0942B3);
+}
+
+/* -- State: Hover + Active -- */
+.secSw.Hover.true {
+    background-color: #002E8A;
+}
+
+/* -- State: Hover + Inactive -- */
+.secSw.Hover.false {
+    background: #AEBAD2;
+}
+
+/* -- State: Focus + Active -- */
+.secSw.Focus.true {
+    background-color: #002E8A;
+}
+
+/* -- State: Focus + Inactive -- */
+.secSw.Focus.false {
+    background: #AEBAD2;
+}
+
+/* -- State: Disabled -- */
+.secSw.Disabled {
+    background-color: #BCC2D0;
+}
+
+
+/* ===========================
+   Switch Knob (.sW)
+=========================== */
+.sW {
+    width: 16px;
+    height: 16px;
+    fill: var(--Surface-color-surface-primary, #FFF);
+}
+
+/* -- Size Modifier -- */
+.sW.Small {
+    width: 12px;
+    height: 12px;
+}
+
+/* -- State: Disabled -- */
+.sW.Disabled {
+    fill: #EEF1F6;
+}

@@ -24,7 +24,7 @@ export default function TableCell({isSelected,density,contentType,state}){
     }else if(contentType==="checkbox"){
         comp=<CheckBoxLA size={"default"} isChecked={isSelected} isImediate={false} state={"default"}/>
     }else if(contentType==="Status"){
-        comp=<div className="labelmain"><DotLa2 className="dotla"/><span className="spanLabel">Lable</span></div>
+        comp=<div className="labelmain"><DotLa2 className="dotla"/><span className="spanLabel">Label</span></div>
     }else if(contentType==="Spacer"){comp=<></>}
     else if(contentType=="Action"){comp=icon}
     else{
